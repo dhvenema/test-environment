@@ -97,7 +97,7 @@
 
 /** Header ********************************************************************/
 
-    div.head { margin-bottom: 1em }
+    div.head { margin-bottom: 1em; }
     div.head hr { border-style: solid; }
 
     div.head h1 {
@@ -106,7 +106,7 @@
         font-size: 220%;
     }
 
-    div.head h2 { margin-bottom: 1.5em;}
+    div.head h2 { margin-bottom: 1.5em; }
 
 /** Geonovum Logo *************************************************************/
 
@@ -120,9 +120,24 @@
         margin: 0.4rem 0 0.2rem .4rem;
     }
 
+    .head img[src*="logos/Geonovum"] {
+        display: block;
+        border: solid #1a5e9a;
+        border-width: .65rem .7rem .6rem;
+        border-radius: .4rem;
+        background: #1a5e9a;
+        color: white;
+        font-weight: bold;
+    }
+    
     .head a:hover > img[src*="logos/Geonovum"],
     .head a:focus > img[src*="logos/Geonovum"] {
         opacity: .8;
+    }
+
+    .head a:active > img[src*="logos/Geonovum"] {
+        background: #c00;
+        border-color: #c00;
     }
 
     /* see also additional rules in Link Styling section */
@@ -130,7 +145,7 @@
 /** Copyright *****************************************************************/
 
     p.copyright,
-    p.copyright small { font-size: small }
+    p.copyright small { font-size: small; }
     
     .copyright a[href],  .copyright a[href]:hover {
         border: none;
